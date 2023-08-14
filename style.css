@@ -1,0 +1,190 @@
+body {
+    
+    background: url(./images/pattern-background-mobile.svg);
+    background-color: #E0E8FF;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+
+}
+
+.hero {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 32px;
+}
+
+.text-container {
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+h1 {
+    color: #1F2E55;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+.text-container p {
+    color: #717FA6;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.subscribe-container {
+    width: 279px;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+    margin: 24px auto;
+    padding: 16px;   
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+}
+
+.plan-details {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.plan-info {
+    color: #1F2E55;
+    font-family: Red Hat Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.price {
+    color: #717FA6;
+    font-family: Red Hat Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.change {
+    color: #382AE1;
+    font-family: Red Hat Display;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: url('./images/Pointer.svg'), auto;
+}
+.change:hover {
+    color: #766CF1;
+}
+
+.pay-button {
+    width: 279px;
+    height: 50px;
+    border-radius: 11px;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #fff;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: url('./images/Pointer.svg'), auto;
+}
+.pay-button:hover {
+    background: #766CF1;
+}
+
+.cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px auto 32px;
+    color: #717FA6;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: url('./images/Pointer.svg'), auto;
+}
+.cancel:hover {
+    color: #1F2E55;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background: url(./images/pattern-background-desktop.svg);
+        background-color: #E0E8FF;
+        background-size: 100%;
+        background-repeat: no-repeat;        
+    }
+    .main-container {
+        width: 450px;
+    }
+    .hero {
+        margin-bottom: 45px;
+    }
+    .text-container {
+        width: 354px;
+    }
+    .h1 {
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+    .text-container p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .subscribe-container {
+        width: 354px;
+        margin: 20px auto 32px;
+        padding: 25px 24px;  
+    }
+    .plan-details {
+        margin-right: 94px;
+    }
+    .plan-info {
+        font-size: 16px;
+    }
+    .price {
+        font-size: 16px;
+    }
+    .change {
+        font-size: 14px;
+    }
+    .pay-button {
+        width: 354px;
+    }
+    .cancel {
+        margin: 32px auto 48px;
+    }
+}
